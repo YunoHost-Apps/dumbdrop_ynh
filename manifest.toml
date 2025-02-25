@@ -5,7 +5,7 @@ packaging_format = 2
 id = "dumbdrop"
 name = "DumbDrop"
 description.en = "Dumb file dropper"
-description.fr = "Transfert de fichier simple."
+description.fr = "Transfert de fichier simple"
 
 version = "1.0.0~ynh1"
 
@@ -15,6 +15,7 @@ maintainers = ["eric_G"]
 license = "GPL-3.0"
 website = "https://www.dumbware.io/"
 code = "https://github.com/DumbWareio/DumbDrop"
+fund = "https://buymeacoffee.com/dumbware"
 
 [integration]
 yunohost = ">= 12.0.9"
@@ -25,9 +26,9 @@ multi_instance = true
 ldap = false
 sso = false
 
-disk = "50M"
-ram.build = "50M"
-ram.runtime = "50M"
+disk = "200M"
+ram.build = "200M"
+ram.runtime = "70M"
 
 [install]
     [install.domain]
