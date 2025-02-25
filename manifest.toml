@@ -5,7 +5,7 @@ packaging_format = 2
 id = "dumbdrop"
 name = "DumbDrop"
 description.en = "Dumb file dropper"
-description.fr = "Transfert de fichier simple."
+description.fr = "Transfert de fichier simple"
 
 version = "1.0.0~ynh1"
 
