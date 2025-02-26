@@ -1,0 +1,18 @@
+version = "1.0"
+
+[main]
+name.en = "DumbDrop configuration"
+name.fr = "Configuration de DumbDrop"
+services = ["__APP__"]
+
+    [main.config]
+    name.en = "Configuration Options"
+    name.fr = "Options de configuration"
+
+        [main.config.pin]
+        ask.en = "PIN protection"
+        ask.fr = "Protection par code PIN"
+        type = "number"
+        help.en = "Choose an optional PIN protection (4-10 digits)"
+        help.fr = "Choisissez la protection par code PIN en option (4 à 10 chiffres)"
+        bind = "DUMBDROP_PIN:__INSTALL_DIR__/.env"
