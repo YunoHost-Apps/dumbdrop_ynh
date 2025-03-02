@@ -36,7 +36,7 @@ A stupid simple file upload application that provides a clean, modern interface 
 - File extension filtering
 
 
-**Versi terkirim:** 1.0.0~ynh1
+**Versi terkirim:** 2025.02.27~ynh1
 
 ## Tangkapan Layar
 

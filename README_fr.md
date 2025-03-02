@@ -36,7 +36,7 @@ Une application simple et stupide de téléchargement de fichiers qui fournit un
 - Filtrage des extensions de fichiers
     
 
-**Version incluse :** 1.0.0~ynh1
+**Version incluse :** 2025.02.27~ynh1
 
 ## Captures d’écran
 
