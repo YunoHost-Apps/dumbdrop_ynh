@@ -49,7 +49,7 @@ ram.runtime = "70M"
     [resources.sources.main]
     url = "https://github.com/DumbWareio/DumbDrop/archive/fc83e527b7950a3d281797d043f1269a1b2deb4a.tar.gz"
     sha256 = "c50b89c230c1bca25d4e4666d33639ab787b164afa4d968040d03e905fd9bb2a"
-
+    autoupdate.upstream = "https://github.com/DumbWareio/DumbDrop"
     autoupdate.strategy = "latest_github_commit"
 
     [resources.system_user]
