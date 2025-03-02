@@ -60,3 +60,5 @@ ram.runtime = "70M"
     main.url = "/"
 
     [resources.ports]
+    main.default = 3000
+    
