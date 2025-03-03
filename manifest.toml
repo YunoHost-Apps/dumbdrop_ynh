@@ -7,7 +7,7 @@ name = "DumbDrop"
 description.en = "Dumb file dropper"
 description.fr = "Transfert de fichier simple"
 
-version = "1.0.0~ynh1"
+version = "2025.02.27~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -47,8 +47,8 @@ ram.runtime = "70M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/DumbWareio/DumbDrop/archive/c6a969b5cd28ec0cad85353e440353d36eaf4433.tar.gz"
-    sha256 = "b54bd77b522ff9a34afe095eb5804767ba56c01c1c859d5b7912fac448b077f5"
+    url = "https://github.com/DumbWareio/DumbDrop/archive/fc83e527b7950a3d281797d043f1269a1b2deb4a.tar.gz"
+    sha256 = "c50b89c230c1bca25d4e4666d33639ab787b164afa4d968040d03e905fd9bb2a"
 
     autoupdate.strategy = "latest_github_commit"
 
