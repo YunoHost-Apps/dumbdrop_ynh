@@ -34,9 +34,9 @@ ram.runtime = "70M"
     [install.domain]
     type = "domain"
 
-    #[install.path]
-    #type = "path"
-    #default = "/dumbdrop"
+    [install.path]
+    type = "path"
+    default = "/dumbdrop"
 
     [install.init_main_permission]
     type = "group"
