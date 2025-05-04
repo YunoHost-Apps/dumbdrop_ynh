@@ -34,9 +34,9 @@ ram.runtime = "70M"
     [install.domain]
     type = "domain"
 
-    #[install.path]
-    #type = "path"
-    #default = "/example"
+    [install.path]
+    type = "path"
+    default = "/dumbdrop"
 
     [install.init_main_permission]
     type = "group"
@@ -47,14 +47,16 @@ ram.runtime = "70M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/DumbWareio/DumbDrop/archive/c6a969b5cd28ec0cad85353e440353d36eaf4433.tar.gz"
-    sha256 = "b54bd77b522ff9a34afe095eb5804767ba56c01c1c859d5b7912fac448b077f5"
-
+    url = "https://github.com/DumbWareio/DumbDrop/archive/bf1c9a2dbdb051f34a8bea5f0b4082ca96888c7e.tar.gz"
+    sha256 = "94a6181a0fd9e0435f0dc6baa132e7eeb951e0bb05268711923f49284a454afa"
+    autoupdate.upstream = "https://github.com/DumbWareio/DumbDrop"
     autoupdate.strategy = "latest_github_commit"
 
     [resources.system_user]
 
     [resources.install_dir]
+
+    [resources.data_dir]
 
     [resources.permissions]
     main.url = "/"
