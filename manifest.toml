@@ -14,6 +14,8 @@ maintainers = ["eric_G"]
 [upstream]
 license = "GPL-3.0"
 website = "https://www.dumbware.io/"
+demo = "https://dumbdrop.dumbware.io/"
+admindoc = "https://www.dumbware.io/DumbDrop"
 code = "https://github.com/DumbWareio/DumbDrop"
 fund = "https://buymeacoffee.com/dumbware"
 
