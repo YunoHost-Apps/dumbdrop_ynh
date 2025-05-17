@@ -7,7 +7,7 @@ name = "DumbDrop"
 description.en = "Dumb file dropper"
 description.fr = "Transfert de fichier simple"
 
-version = "2025.05.09~ynh1"
+version = "2025.05.09~ynh2"
 
 maintainers = ["eric_G"]
 
@@ -36,13 +36,14 @@ ram.runtime = "70M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/dumbdrop"
-
     [install.init_main_permission]
     type = "group"
     default = "visitors"
+
+    [install.pin]
+    ask.en = "Choose an optional PIN protection (4-10 digits)"
+    ask.fr = "Choisissez la protection par code PIN en option (4 à 10 chiffres)"
+    type = "number"
 
 [resources]
 

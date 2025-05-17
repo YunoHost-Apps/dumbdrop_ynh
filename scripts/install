@@ -4,6 +4,22 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# STORE SETTINGS FROM MANIFEST
+#=================================================
+ynh_script_progression "Storing installation settings..."
+
+ynh_app_setting_set --key=pin --value=$pin
+
+#=================================================
+# CHECK IF THE APP CAN BE INSTALLED WITH THESE ARGS
+#=================================================
+ynh_script_progression "Validating installation parameters..."
+
+if [[ ${#pin} -lt 4 ]] || [[ ${#pin} -gt 10 ]]; then
+    ynh_die "PIN length should be between 4 and 10 digits"
+fi
+
+#=================================================
 # INSTALL DEPENDENCIES
 #=================================================
 ynh_script_progression "Installing dependencies..."
@@ -36,7 +52,7 @@ ynh_config_add_systemd
 yunohost service add "$app" --description="Dumb file dropper" --log="/var/log/$app/$app.log"
 
 #=================================================
-# INSTALL DODOC
+# INSTALL DUMBDROP
 #=================================================
 ynh_script_progression "Installing the app..."
 
