@@ -48,7 +48,6 @@ ram.runtime = "70M"
     ask.en = "Choose an optional PIN protection (4-10 digits)"
     ask.fr = "Choisissez la protection par code PIN en option (4 à 10 chiffres)"
     type = "number"
-    default = ""
 
 [resources]
 
