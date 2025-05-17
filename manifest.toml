@@ -7,7 +7,7 @@ name = "DumbDrop"
 description.en = "Dumb file dropper"
 description.fr = "Transfert de fichier simple"
 
-version = "2025.05.09~ynh1"
+version = "2025.05.09~ynh2"
 
 maintainers = ["eric_G"]
 
