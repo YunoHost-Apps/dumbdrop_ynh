@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -18,13 +17,6 @@ ynh_script_progression "Validating installation parameters..."
 if [[ ${#pin} -lt 4 ]] || [[ ${#pin} -gt 10 ]]; then
     ynh_die "PIN length should be between 4 and 10 digits"
 fi
-
-#=================================================
-# INSTALL DEPENDENCIES
-#=================================================
-ynh_script_progression "Installing dependencies..."
-
-ynh_nodejs_install
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE

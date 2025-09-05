@@ -7,7 +7,7 @@ name = "DumbDrop"
 description.en = "Dumb file dropper"
 description.fr = "Transfert de fichier simple"
 
-version = "2025.06.04~ynh1"
+version = "2025.06.20~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -20,7 +20,7 @@ code = "https://github.com/DumbWareio/DumbDrop"
 fund = "https://buymeacoffee.com/dumbware"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -50,8 +50,8 @@ ram.runtime = "70M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/DumbWareio/DumbDrop/archive/54cdf4be36b85a7146685841c567cb6b4e96b69e.tar.gz"
-    sha256 = "0d0d832f1ab86530499f9b61ea8f9c14701d47822539fc56b242f1586d5bd36c"
+    url = "https://github.com/DumbWareio/DumbDrop/archive/1a8fe1941695b952c2d4e9dfaf4597a4eb576c1e.tar.gz"
+    sha256 = "65b048faf11e0143033227723663ef75f3ba3e7c2fe5fd3f86f719e12121b842"
     autoupdate.upstream = "https://github.com/DumbWareio/DumbDrop"
     autoupdate.strategy = "latest_github_commit"
 
@@ -65,3 +65,6 @@ ram.runtime = "70M"
     main.url = "/"
 
     [resources.ports]
+
+    [resources.nodejs]
+    version = "22"
