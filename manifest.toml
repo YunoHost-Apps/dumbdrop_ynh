@@ -41,9 +41,11 @@ ram.runtime = "70M"
     default = "visitors"
 
     [install.pin]
-    ask.en = "Choose an optional PIN protection (4-10 digits)"
-    ask.fr = "Choisissez la protection par code PIN en option (4 à 10 chiffres)"
-    type = "number"
+    ask.en = "Choose a PIN protection (4-10 digits)"
+    ask.fr = "Choisissez la protection par code PIN (4 à 10 chiffres)"
+    type = "string"
+    pattern.regexp = '^\d{4,10}$'
+    optional = false
 
 [resources]
 
