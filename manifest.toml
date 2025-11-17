@@ -7,7 +7,7 @@ name = "DumbDrop"
 description.en = "Dumb file dropper"
 description.fr = "Transfert de fichier simple"
 
-version = "2025.11.06~ynh1"
+version = "2025.11.10~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -43,15 +43,17 @@ ram.runtime = "70M"
     [install.pin]
     ask.en = "Choose an optional PIN protection (4-10 digits)"
     ask.fr = "Choisissez la protection par code PIN en option (4 à 10 chiffres)"
-    type = "number"
+    type = "string"
+    pattern.regexp = '^\d{4,10}$'
+    optional = true
 
 [resources]
 
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/DumbWareio/DumbDrop/archive/d69a8b25b4008f0a5f037ae56d9647651554af11.tar.gz"
-    sha256 = "c0d54ad1af76dc8241ee745d9c6831bda2955acb46dc090a9c2cf923522453cd"
+    url = "https://github.com/DumbWareio/DumbDrop/archive/ff8f813f493e89c7da056e7a3101ce2ef48e3960.tar.gz"
+    sha256 = "aa9e058cde00e3a8babe98eedbb5d195771522dfe1fe4948db7c84f52d1c6b9e"
     autoupdate.upstream = "https://github.com/DumbWareio/DumbDrop"
     autoupdate.strategy = "latest_github_commit"
 
